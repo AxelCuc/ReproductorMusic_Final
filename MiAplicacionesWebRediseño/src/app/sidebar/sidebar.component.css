@@ -1,0 +1,7 @@
+/* Sidebar styles - most handled by Tailwind */
+
+/* Smooth transitions for active states */
+:host {
+    display: block;
+    height: 100%;
+}

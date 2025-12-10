@@ -1,0 +1,52 @@
+<div class="p-6 h-full flex flex-col">
+    <!-- Sidebar Header -->
+    <div class="mb-8">
+        <h2 class="text-lg font-bold text-slate-800 dark:text-slate-100 mb-2">Tu Biblioteca</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Explora tu música</p>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="flex-1 space-y-2">
+        <a routerLink="/"
+            routerLinkActive="bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg scale-105"
+            [routerLinkActiveOptions]="{exact: true}"
+            class="flex items-center space-x-3 px-4 py-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 group">
+            <div
+                class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                </svg>
+            </div>
+            <span class="font-medium">Inicio</span>
+        </a>
+
+        <a routerLink="/search"
+            routerLinkActive="bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg scale-105"
+            class="flex items-center space-x-3 px-4 py-3 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 group">
+            <div
+                class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+            </div>
+            <span class="font-medium">Buscar</span>
+        </a>
+    </nav>
+
+    <!-- Sidebar Footer -->
+    <div class="mt-auto pt-6 border-t border-slate-200 dark:border-slate-700">
+        <div class="card p-4 text-center">
+            <div
+                class="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                </svg>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-400 font-medium">
+                Disfruta de tu música favorita
+            </p>
+        </div>
+    </div>
+</div>
